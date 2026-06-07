@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest a new Japanese business CSV rule or workflow.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: What kind of spreadsheet or workflow should this help?
+    validations:
+      required: true
+  - type: textarea
+    id: rule
+    attributes:
+      label: Proposed behavior
+      description: What should sheetlint-jp detect or output?
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example values
+      description: Please anonymize any business data.
+      render: csv
+    validations:
+      required: false

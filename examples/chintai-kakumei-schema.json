@@ -1,0 +1,57 @@
+{
+  "key": ["物件コード", "部屋番号"],
+  "columns": [
+    {
+      "name": "物件コード",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "物件名",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "部屋番号",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "契約者名",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "name": "契約者電話番号",
+      "type": "phone"
+    },
+    {
+      "name": "契約者郵便番号",
+      "type": "postalCode"
+    },
+    {
+      "name": "賃料",
+      "type": "amount"
+    },
+    {
+      "name": "共益費",
+      "type": "amount"
+    },
+    {
+      "name": "駐車場料金",
+      "type": "amount"
+    },
+    {
+      "name": "敷金",
+      "type": "amount"
+    },
+    {
+      "name": "礼金",
+      "type": "amount"
+    },
+    {
+      "name": "請求金額",
+      "type": "amount"
+    }
+  ]
+}

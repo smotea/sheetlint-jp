@@ -1,0 +1,39 @@
+name: Bug report
+description: Report a CSV checking problem or CLI error.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve sheetlint-jp. Please do not paste private business data. Use a small anonymized CSV sample.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect sheetlint-jp to report?
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Minimal sample CSV
+      description: Please remove private data before posting.
+      render: csv
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: sheetlint-jp 0.1.0, Node.js 20.x
+    validations:
+      required: false
