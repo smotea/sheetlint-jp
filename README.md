@@ -1,5 +1,6 @@
 # sheetlint-jp
 
+[![CI](https://github.com/smotea/sheetlint-jp/actions/workflows/ci.yml/badge.svg)](https://github.com/smotea/sheetlint-jp/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/sheetlint-jp.svg)](https://www.npmjs.com/package/sheetlint-jp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -160,7 +161,7 @@ This helps prevent agents from building scripts around broken assumptions.
 
 This project is prepared for public OSS maintenance:
 
-- `docs/github-actions-ci.yml` contains a ready-to-enable GitHub Actions workflow for build, tests, lint, CLI sample execution, and npm package checks.
+- GitHub Actions verifies build, tests, lint, CLI sample execution, and npm package checks.
 - Issue templates ask users to anonymize business CSV data before posting.
 - `docs/maintenance.md` describes release and triage workflows.
 - `docs/publication-checklist.md` tracks the GitHub, npm, and application readiness steps.

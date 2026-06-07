@@ -1,5 +1,6 @@
 # sheetlint-jp
 
+[![CI](https://github.com/smotea/sheetlint-jp/actions/workflows/ci.yml/badge.svg)](https://github.com/smotea/sheetlint-jp/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/sheetlint-jp.svg)](https://www.npmjs.com/package/sheetlint-jp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -149,7 +150,7 @@ npx sheetlint-jp customer-import.csv --schema schema.json --format markdown --ou
 
 公開OSSとして運用しやすいように、次の準備を入れています。
 
-- `docs/github-actions-ci.yml` に、build、test、lint、CLIサンプル実行、npm package内容確認用のGitHub Actionsテンプレートを用意
+- GitHub Actionsでbuild、test、lint、CLIサンプル実行、npm package内容確認を実行
 - Issueテンプレートで、業務データを匿名化して投稿するよう案内
 - `docs/maintenance.md` にリリースとトリアージの流れを記載
 - `docs/publication-checklist.md` にGitHub公開、npm公開、応募前チェックを整理
