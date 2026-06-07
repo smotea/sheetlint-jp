@@ -1,0 +1,83 @@
+{
+  "name": "sheetlint-jp",
+  "version": "0.1.0",
+  "description": "A TypeScript CLI that checks Japanese business CSV files before sending them to AI tools, GAS, or automation scripts.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "sheetlint-jp": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "docs",
+    "README.md",
+    "README.ja.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "audit:public": "node scripts/public-audit.mjs",
+    "check": "npm run audit:public && npm run build && npm test && npm run lint",
+    "sample": "node dist/cli.js examples/bad-sample.csv",
+    "sample:markdown": "node dist/cli.js examples/bad-sample.csv --format markdown --output report.md",
+    "prepublishOnly": "npm run check",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "csv",
+    "japanese",
+    "spreadsheet",
+    "data-quality",
+    "cli",
+    "lint",
+    "ai",
+    "codex",
+    "claude-code",
+    "google-apps-script",
+    "excel",
+    "google-sheets"
+  ],
+  "author": "smotea",
+  "license": "MIT",
+  "homepage": "https://github.com/smotea/sheetlint-jp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smotea/sheetlint-jp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smotea/sheetlint-jp/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "csv-parse": "^6.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vitest": "^4.0.14"
+  }
+}

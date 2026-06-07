@@ -1,0 +1,15 @@
+node_modules/
+dist/
+coverage/
+report.md
+.DS_Store
+npm-debug.log*
+
+# Local publication drafts and generated previews
+docs/*application*.md
+docs/codex-oss-growth-plan.md
+docs/launch-kit.md
+docs/publication-checklist.md
+docs/zenn-launch-draft.md
+docs/zenn-launch-preview.html
+docs/zenn-profile.md
