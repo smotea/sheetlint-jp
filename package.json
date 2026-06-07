@@ -12,7 +12,7 @@
     }
   },
   "bin": {
-    "sheetlint-jp": "./dist/cli.js"
+    "sheetlint-jp": "dist/cli.js"
   },
   "files": [
     "dist",
