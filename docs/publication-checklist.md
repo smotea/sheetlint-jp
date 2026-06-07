@@ -17,6 +17,7 @@ Use this checklist before submitting sheetlint-jp to the Codex for Open Source p
 - [ ] Default branch is `main`
 - [ ] README renders correctly
 - [ ] GitHub Actions CI passes
+- [ ] If `gh` cannot push workflows, refresh auth with `gh auth refresh -h github.com -s workflow`, then copy `docs/github-actions-ci.yml` to `.github/workflows/ci.yml`
 - [ ] Topics are set: `csv`, `data-quality`, `japanese`, `spreadsheet`, `cli`, `typescript`, `ai`, `codex`
 - [ ] Release `v0.1.0` exists
 - [ ] Issue templates and PR template are visible

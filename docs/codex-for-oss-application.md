@@ -34,6 +34,7 @@ Character count: 297
 
 - Public GitHub repository
 - Passing GitHub Actions CI
+- If workflow permissions block CI upload, enable the workflow from `docs/github-actions-ci.yml` after refreshing GitHub auth
 - `v0.1.0` release
 - npm package, if npm login is available
 - README with English and Japanese usage examples

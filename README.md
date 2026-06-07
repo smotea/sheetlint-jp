@@ -160,7 +160,7 @@ This helps prevent agents from building scripts around broken assumptions.
 
 This project is prepared for public OSS maintenance:
 
-- GitHub Actions verifies build, tests, lint, CLI sample execution, and npm package contents.
+- `docs/github-actions-ci.yml` contains a ready-to-enable GitHub Actions workflow for build, tests, lint, CLI sample execution, and npm package checks.
 - Issue templates ask users to anonymize business CSV data before posting.
 - `docs/maintenance.md` describes release and triage workflows.
 - `docs/publication-checklist.md` tracks the GitHub, npm, and application readiness steps.

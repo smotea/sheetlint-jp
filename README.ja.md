@@ -149,7 +149,7 @@ npx sheetlint-jp customer-import.csv --schema schema.json --format markdown --ou
 
 公開OSSとして運用しやすいように、次の準備を入れています。
 
-- GitHub Actionsでbuild、test、lint、CLIサンプル実行、npm package内容確認を実行
+- `docs/github-actions-ci.yml` に、build、test、lint、CLIサンプル実行、npm package内容確認用のGitHub Actionsテンプレートを用意
 - Issueテンプレートで、業務データを匿名化して投稿するよう案内
 - `docs/maintenance.md` にリリースとトリアージの流れを記載
 - `docs/publication-checklist.md` にGitHub公開、npm公開、応募前チェックを整理
